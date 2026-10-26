@@ -1,0 +1,307 @@
+2026-10-25 08:00:01 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:00:06 INFO [db-sync] Synced 239 records
+2026-10-25 08:00:11 INFO [calc-module] Computation cycle 575 completed
+2026-10-25 08:00:16 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:00:18 INFO [hmi] Operator view refreshed
+2026-10-25 08:00:20 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:00:21 INFO [db-sync] Synced 981 records
+2026-10-25 08:00:24 INFO [calc-module] Computation cycle 390 completed
+2026-10-25 08:00:25 INFO [hmi] Operator view refreshed
+2026-10-25 08:00:29 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:00:34 INFO [calc-module] Computation cycle 566 completed
+2026-10-25 08:00:35 INFO [hmi] Operator view refreshed
+2026-10-25 08:00:38 INFO [calc-module] Computation cycle 678 completed
+2026-10-25 08:00:39 INFO [calc-module] Computation cycle 876 completed
+2026-10-25 08:00:42 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:00:44 INFO [db-sync] Synced 380 records
+2026-10-25 08:00:45 INFO [hmi] Operator view refreshed
+2026-10-25 08:00:47 INFO [db-sync] Synced 547 records
+2026-10-25 08:00:50 INFO [db-sync] Synced 474 records
+2026-10-25 08:00:51 INFO [db-sync] Synced 702 records
+2026-10-25 08:00:54 INFO [db-sync] Synced 842 records
+2026-10-25 08:00:56 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:01:00 INFO [hmi] Operator view refreshed
+2026-10-25 08:01:04 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:01:06 INFO [db-sync] Synced 272 records
+2026-10-25 08:01:10 INFO [hmi] Operator view refreshed
+2026-10-25 08:01:12 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:01:13 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:01:17 INFO [db-sync] Synced 643 records
+2026-10-25 08:01:22 INFO [calc-module] Computation cycle 395 completed
+2026-10-25 08:01:27 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:01:28 INFO [calc-module] Computation cycle 697 completed
+2026-10-25 08:01:31 INFO [hmi] Operator view refreshed
+2026-10-25 08:01:33 INFO [calc-module] Computation cycle 301 completed
+2026-10-25 08:01:36 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:01:39 INFO [db-sync] Synced 520 records
+2026-10-25 08:01:41 INFO [db-sync] Synced 157 records
+2026-10-25 08:01:45 INFO [calc-module] Computation cycle 614 completed
+2026-10-25 08:01:48 INFO [calc-module] Computation cycle 115 completed
+2026-10-25 08:01:53 INFO [db-sync] Synced 60 records
+2026-10-25 08:01:57 INFO [calc-module] Computation cycle 88 completed
+2026-10-25 08:01:59 INFO [calc-module] Computation cycle 779 completed
+2026-10-25 08:02:04 INFO [db-sync] Synced 676 records
+2026-10-25 08:02:09 INFO [db-sync] Synced 272 records
+2026-10-25 08:02:11 WARN [db-sync] Query slow: 5466 ms
+2026-10-25 08:02:14 ERROR [db-sync] Connection to database timed out after 30s
+2026-10-25 08:02:16 ERROR [db-sync] Retry 3/3 failed: database timeout
+2026-10-25 08:02:17 INFO [db-sync] Synced 66 records
+2026-10-25 08:02:18 INFO [db-sync] Synced 603 records
+2026-10-25 08:02:19 INFO [calc-module] Computation cycle 725 completed
+2026-10-25 08:02:22 INFO [db-sync] Synced 70 records
+2026-10-25 08:02:25 INFO [calc-module] Computation cycle 527 completed
+2026-10-25 08:02:27 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:02:31 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:02:35 ERROR [calc-module] Configuration error: missing key 'sampling_rate' in config.yaml
+2026-10-25 08:02:39 WARN [calc-module] Falling back to defaults failed
+2026-10-25 08:02:40 INFO [calc-module] Computation cycle 690 completed
+2026-10-25 08:02:43 INFO [calc-module] Computation cycle 413 completed
+2026-10-25 08:02:45 INFO [calc-module] Computation cycle 255 completed
+2026-10-25 08:02:47 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:02:48 INFO [hmi] Operator view refreshed
+2026-10-25 08:02:49 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:02:50 INFO [calc-module] Computation cycle 668 completed
+2026-10-25 08:02:52 INFO [calc-module] Computation cycle 949 completed
+2026-10-25 08:02:54 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:02:56 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:02:59 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:03:04 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:03:07 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:03:12 INFO [db-sync] Synced 992 records
+2026-10-25 08:03:13 INFO [calc-module] Computation cycle 766 completed
+2026-10-25 08:03:18 INFO [calc-module] Computation cycle 599 completed
+2026-10-25 08:03:19 INFO [db-sync] Synced 59 records
+2026-10-25 08:03:20 INFO [db-sync] Synced 71 records
+2026-10-25 08:03:21 ERROR [calc-module] Unhandled exception in compute_flow: ZeroDivisionError
+2026-10-25 08:03:26 ERROR [calc-module] Traceback: calc.py line 88 in compute_flow
+2026-10-25 08:03:30 INFO [calc-module] Computation cycle 635 completed
+2026-10-25 08:03:32 INFO [hmi] Operator view refreshed
+2026-10-25 08:03:36 INFO [hmi] Operator view refreshed
+2026-10-25 08:03:39 INFO [db-sync] Synced 688 records
+2026-10-25 08:03:40 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:03:41 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:03:46 INFO [calc-module] Computation cycle 551 completed
+2026-10-25 08:03:47 INFO [hmi] Operator view refreshed
+2026-10-25 08:03:49 INFO [db-sync] Synced 379 records
+2026-10-25 08:03:52 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:03:55 INFO [calc-module] Computation cycle 684 completed
+2026-10-25 08:03:58 INFO [calc-module] Computation cycle 962 completed
+2026-10-25 08:04:03 INFO [calc-module] Computation cycle 912 completed
+2026-10-25 08:04:08 INFO [db-sync] Synced 279 records
+2026-10-25 08:04:10 INFO [db-sync] Synced 735 records
+2026-10-25 08:04:13 INFO [hmi] Operator view refreshed
+2026-10-25 08:04:17 INFO [calc-module] Computation cycle 95 completed
+2026-10-25 08:04:20 INFO [hmi] Operator view refreshed
+2026-10-25 08:04:22 INFO [db-sync] Synced 653 records
+2026-10-25 08:04:26 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:04:28 INFO [calc-module] Computation cycle 115 completed
+2026-10-25 08:04:33 INFO [calc-module] Computation cycle 855 completed
+2026-10-25 08:04:34 INFO [db-sync] Synced 441 records
+2026-10-25 08:04:37 INFO [hmi] Operator view refreshed
+2026-10-25 08:04:38 INFO [db-sync] Synced 699 records
+2026-10-25 08:04:42 INFO [hmi] Operator view refreshed
+2026-10-25 08:04:44 INFO [db-sync] Synced 948 records
+2026-10-25 08:04:45 INFO [db-sync] Synced 903 records
+2026-10-25 08:04:49 INFO [db-sync] Synced 755 records
+2026-10-25 08:04:50 INFO [db-sync] Synced 274 records
+2026-10-25 08:04:54 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:04:57 INFO [db-sync] Synced 205 records
+2026-10-25 08:04:59 INFO [hmi] Operator view refreshed
+2026-10-25 08:05:03 INFO [calc-module] Computation cycle 676 completed
+2026-10-25 08:05:06 INFO [hmi] Operator view refreshed
+2026-10-25 08:05:10 INFO [hmi] Operator view refreshed
+2026-10-25 08:05:11 INFO [hmi] Operator view refreshed
+2026-10-25 08:05:14 INFO [hmi] Operator view refreshed
+2026-10-25 08:05:18 INFO [calc-module] Computation cycle 112 completed
+2026-10-25 08:05:22 INFO [hmi] Operator view refreshed
+2026-10-25 08:05:24 INFO [calc-module] Computation cycle 395 completed
+2026-10-25 08:05:28 INFO [hmi] Operator view refreshed
+2026-10-25 08:05:32 WARN [hmi] Input 'setpoint' out of range: -999
+2026-10-25 08:05:35 ERROR [hmi] Invalid input: setpoint rejected (1e9)
+2026-10-25 08:05:40 INFO [calc-module] Computation cycle 738 completed
+2026-10-25 08:05:43 INFO [hmi] Operator view refreshed
+2026-10-25 08:05:48 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:05:52 INFO [db-sync] Synced 197 records
+2026-10-25 08:05:55 INFO [db-sync] Synced 631 records
+2026-10-25 08:05:58 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:06:03 INFO [hmi] Operator view refreshed
+2026-10-25 08:06:07 INFO [hmi] Operator view refreshed
+2026-10-25 08:06:09 INFO [db-sync] Synced 524 records
+2026-10-25 08:06:14 INFO [calc-module] Computation cycle 291 completed
+2026-10-25 08:06:17 INFO [hmi] Operator view refreshed
+2026-10-25 08:06:19 INFO [db-sync] Synced 826 records
+2026-10-25 08:06:23 INFO [calc-module] Computation cycle 48 completed
+2026-10-25 08:06:28 INFO [calc-module] Computation cycle 467 completed
+2026-10-25 08:06:32 INFO [db-sync] Synced 736 records
+2026-10-25 08:06:34 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:06:38 INFO [calc-module] Computation cycle 915 completed
+2026-10-25 08:06:43 INFO [db-sync] Synced 181 records
+2026-10-25 08:06:45 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:06:49 INFO [calc-module] Computation cycle 468 completed
+2026-10-25 08:06:54 INFO [hmi] Operator view refreshed
+2026-10-25 08:06:58 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:07:02 INFO [db-sync] Synced 762 records
+2026-10-25 08:07:05 INFO [hmi] Operator view refreshed
+2026-10-25 08:07:08 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:07:11 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:07:14 INFO [db-sync] Synced 279 records
+2026-10-25 08:07:16 INFO [calc-module] Computation cycle 142 completed
+2026-10-25 08:07:18 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:07:21 INFO [calc-module] Computation cycle 425 completed
+2026-10-25 08:07:23 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:07:24 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:07:27 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:07:31 INFO [hmi] Operator view refreshed
+2026-10-25 08:07:34 INFO [db-sync] Synced 500 records
+2026-10-25 08:07:38 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:07:42 INFO [hmi] Operator view refreshed
+2026-10-25 08:07:44 INFO [db-sync] Synced 861 records
+2026-10-25 08:07:49 INFO [calc-module] Computation cycle 929 completed
+2026-10-25 08:07:53 INFO [calc-module] Computation cycle 86 completed
+2026-10-25 08:07:55 INFO [db-sync] Synced 888 records
+2026-10-25 08:07:58 INFO [calc-module] Computation cycle 267 completed
+2026-10-25 08:08:01 INFO [db-sync] Synced 466 records
+2026-10-25 08:08:04 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:08:09 INFO [calc-module] Computation cycle 482 completed
+2026-10-25 08:08:11 INFO [calc-module] Computation cycle 975 completed
+2026-10-25 08:08:12 INFO [calc-module] Computation cycle 800 completed
+2026-10-25 08:08:14 INFO [calc-module] Computation cycle 973 completed
+2026-10-25 08:08:16 INFO [calc-module] Computation cycle 637 completed
+2026-10-25 08:08:17 INFO [db-sync] Synced 485 records
+2026-10-25 08:08:20 INFO [db-sync] Synced 477 records
+2026-10-25 08:08:25 INFO [hmi] Operator view refreshed
+2026-10-25 08:08:28 INFO [calc-module] Computation cycle 797 completed
+2026-10-25 08:08:31 INFO [calc-module] Computation cycle 593 completed
+2026-10-25 08:08:33 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:08:35 INFO [calc-module] Computation cycle 607 completed
+2026-10-25 08:08:40 INFO [calc-module] Computation cycle 714 completed
+2026-10-25 08:08:41 INFO [calc-module] Computation cycle 816 completed
+2026-10-25 08:08:44 INFO [hmi] Operator view refreshed
+2026-10-25 08:08:47 INFO [calc-module] Computation cycle 519 completed
+2026-10-25 08:08:51 INFO [calc-module] Computation cycle 870 completed
+2026-10-25 08:08:55 INFO [calc-module] Computation cycle 444 completed
+2026-10-25 08:09:00 INFO [db-sync] Synced 446 records
+2026-10-25 08:09:04 INFO [hmi] Operator view refreshed
+2026-10-25 08:09:09 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:09:10 INFO [hmi] Operator view refreshed
+2026-10-25 08:09:12 INFO [hmi] Operator view refreshed
+2026-10-25 08:09:16 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:09:19 INFO [hmi] Operator view refreshed
+2026-10-25 08:09:22 INFO [db-sync] Synced 500 records
+2026-10-25 08:09:27 INFO [hmi] Operator view refreshed
+2026-10-25 08:09:32 INFO [hmi] Operator view refreshed
+2026-10-25 08:09:36 INFO [db-sync] Synced 88 records
+2026-10-25 08:09:40 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:09:41 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:09:43 INFO [hmi] Operator view refreshed
+2026-10-25 08:09:46 INFO [hmi] Operator view refreshed
+2026-10-25 08:09:49 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:09:52 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:09:55 INFO [hmi] Operator view refreshed
+2026-10-25 08:09:56 INFO [hmi] Operator view refreshed
+2026-10-25 08:10:01 INFO [db-sync] Synced 324 records
+2026-10-25 08:10:05 INFO [db-sync] Synced 197 records
+2026-10-25 08:10:10 INFO [hmi] Operator view refreshed
+2026-10-25 08:10:13 INFO [hmi] Operator view refreshed
+2026-10-25 08:10:16 INFO [db-sync] Synced 370 records
+2026-10-25 08:10:18 INFO [calc-module] Computation cycle 726 completed
+2026-10-25 08:10:23 INFO [hmi] Operator view refreshed
+2026-10-25 08:10:27 INFO [hmi] Operator view refreshed
+2026-10-25 08:10:32 INFO [calc-module] Computation cycle 894 completed
+2026-10-25 08:10:36 INFO [hmi] Operator view refreshed
+2026-10-25 08:10:39 INFO [hmi] Operator view refreshed
+2026-10-25 08:10:43 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:10:44 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:10:47 INFO [db-sync] Synced 153 records
+2026-10-25 08:10:52 INFO [calc-module] Computation cycle 255 completed
+2026-10-25 08:10:57 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:11:01 INFO [db-sync] Synced 795 records
+2026-10-25 08:11:04 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:11:09 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:11:10 INFO [calc-module] Computation cycle 625 completed
+2026-10-25 08:11:13 INFO [db-sync] Synced 641 records
+2026-10-25 08:11:15 INFO [calc-module] Computation cycle 161 completed
+2026-10-25 08:11:19 INFO [calc-module] Computation cycle 161 completed
+2026-10-25 08:11:23 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:11:26 INFO [hmi] Operator view refreshed
+2026-10-25 08:11:27 INFO [hmi] Operator view refreshed
+2026-10-25 08:11:32 INFO [db-sync] Synced 947 records
+2026-10-25 08:11:37 INFO [db-sync] Synced 436 records
+2026-10-25 08:11:40 INFO [db-sync] Synced 664 records
+2026-10-25 08:11:42 INFO [db-sync] Synced 74 records
+2026-10-25 08:11:47 INFO [hmi] Operator view refreshed
+2026-10-25 08:11:51 INFO [hmi] Operator view refreshed
+2026-10-25 08:11:54 INFO [hmi] Operator view refreshed
+2026-10-25 08:11:59 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:12:02 INFO [calc-module] Computation cycle 911 completed
+2026-10-25 08:12:04 INFO [hmi] Operator view refreshed
+2026-10-25 08:12:07 INFO [calc-module] Computation cycle 784 completed
+2026-10-25 08:12:11 INFO [calc-module] Computation cycle 782 completed
+2026-10-25 08:12:13 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:12:14 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:12:17 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:12:19 INFO [hmi] Operator view refreshed
+2026-10-25 08:12:23 INFO [hmi] Operator view refreshed
+2026-10-25 08:12:28 INFO [hmi] Operator view refreshed
+2026-10-25 08:12:31 INFO [calc-module] Computation cycle 466 completed
+2026-10-25 08:12:35 INFO [hmi] Operator view refreshed
+2026-10-25 08:12:39 INFO [calc-module] Computation cycle 674 completed
+2026-10-25 08:12:44 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:12:48 INFO [hmi] Operator view refreshed
+2026-10-25 08:12:53 INFO [calc-module] Computation cycle 209 completed
+2026-10-25 08:12:57 INFO [db-sync] Synced 950 records
+2026-10-25 08:13:02 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:13:05 INFO [db-sync] Synced 727 records
+2026-10-25 08:13:06 INFO [calc-module] Computation cycle 566 completed
+2026-10-25 08:13:10 INFO [db-sync] Synced 862 records
+2026-10-25 08:13:14 INFO [calc-module] Computation cycle 664 completed
+2026-10-25 08:13:17 INFO [hmi] Operator view refreshed
+2026-10-25 08:13:21 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:13:23 INFO [db-sync] Synced 468 records
+2026-10-25 08:13:28 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:13:31 INFO [db-sync] Synced 885 records
+2026-10-25 08:13:34 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:13:37 INFO [calc-module] Computation cycle 290 completed
+2026-10-25 08:13:41 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:13:46 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:13:48 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:13:50 INFO [db-sync] Synced 586 records
+2026-10-25 08:13:54 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:13:56 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:13:58 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:14:02 INFO [hmi] Operator view refreshed
+2026-10-25 08:14:03 INFO [calc-module] Computation cycle 539 completed
+2026-10-25 08:14:05 INFO [db-sync] Synced 420 records
+2026-10-25 08:14:08 INFO [calc-module] Computation cycle 481 completed
+2026-10-25 08:14:11 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:14:15 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:14:17 INFO [calc-module] Computation cycle 633 completed
+2026-10-25 08:14:18 INFO [hmi] Operator view refreshed
+2026-10-25 08:14:19 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:14:22 INFO [comm] Heartbeat OK from PLC-03
+2026-10-25 08:14:23 INFO [calc-module] Computation cycle 48 completed
+2026-10-25 08:14:27 INFO [hmi] Operator view refreshed
+2026-10-25 08:14:31 INFO [db-sync] Synced 251 records
+2026-10-25 08:14:33 WARN [comm] Heartbeat missed from PLC-01
+2026-10-25 08:14:35 ERROR [comm] Communication lost with PLC-03 (no response 15s)
+2026-10-25 08:14:39 ERROR [comm] Reconnect to PLC-01 failed
+2026-10-25 08:14:40 INFO [hmi] Operator view refreshed
+2026-10-25 08:14:45 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:14:48 INFO [db-sync] Synced 76 records
+2026-10-25 08:14:51 INFO [hmi] Operator view refreshed
+2026-10-25 08:14:53 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:14:54 INFO [comm] Heartbeat OK from PLC-02
+2026-10-25 08:14:57 INFO [db-sync] Synced 391 records
+2026-10-25 08:14:58 INFO [hmi] Operator view refreshed
+2026-10-25 08:15:03 INFO [comm] Heartbeat OK from PLC-01
+2026-10-25 08:15:07 INFO [calc-module] Computation cycle 933 completed
+2026-10-25 08:15:12 INFO [hmi] Operator view refreshed
+2026-10-25 08:15:14 INFO [hmi] Operator view refreshed
+2026-10-25 08:15:16 INFO [hmi] Operator view refreshed
+2026-10-25 08:15:17 INFO [calc-module] Computation cycle 926 completed
+2026-10-25 08:15:18 INFO [hmi] Operator view refreshed
+2026-10-25 08:15:19 INFO [hmi] Operator view refreshed
+2026-10-25 08:15:23 INFO [hmi] Operator view refreshed
+2026-10-25 08:15:28 INFO [db-sync] Synced 206 records
+2026-10-25 08:15:31 INFO [hmi] Operator view refreshed
+2026-10-25 08:15:34 INFO [db-sync] Synced 264 records
