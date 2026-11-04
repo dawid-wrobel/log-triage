@@ -30,22 +30,25 @@ class LogTools:
         )
         return ", ".join(f"{k}: {v}" for k, v in c.most_common()) or "no results"
 
-    def find_incident_clusters(self, gap_seconds=10):
+    def clusters(self, gap_seconds=10):
         gap = int(gap_seconds)
         fmt = "%Y-%m-%d %H:%M:%S"
-        clusters = []
+        result = []
         for l in self.lines:
             if l.level == "INFO":
                 continue
             t = datetime.strptime(l.ts, fmt)
-            c = clusters[-1] if clusters else None
+            c = result[-1] if result else None
             if c and c["sub"] == l.subsystem and (t - c["last"]).total_seconds() <= gap:
                 c["lines"].append(l)
                 c["last"] = t
             else:
-                clusters.append({"sub": l.subsystem, "last": t, "lines": [l]})
+                result.append({"sub": l.subsystem, "last": t, "lines": [l]})
+        return result
+
+    def find_incident_clusters(self, gap_seconds=10):
         out = []
-        for i, c in enumerate(clusters, 1):
+        for i, c in enumerate(self.clusters(gap_seconds), 1):
             out.append(f"Cluster {i} [{c['sub']}]:")
             out.extend("  " + l.fmt() for l in c["lines"])
         return "\n".join(out[:120]) or "no results"

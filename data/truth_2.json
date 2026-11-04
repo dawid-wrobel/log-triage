@@ -1,0 +1,44 @@
+[
+  {
+    "fault": "db_timeout",
+    "subsystem": "db-sync",
+    "lines": [
+      19,
+      20,
+      21
+    ]
+  },
+  {
+    "fault": "config_error",
+    "subsystem": "calc-module",
+    "lines": [
+      111,
+      112
+    ]
+  },
+  {
+    "fault": "comm_loss",
+    "subsystem": "comm",
+    "lines": [
+      132,
+      133,
+      134
+    ]
+  },
+  {
+    "fault": "invalid_input",
+    "subsystem": "hmi",
+    "lines": [
+      163,
+      164
+    ]
+  },
+  {
+    "fault": "calc_exception",
+    "subsystem": "calc-module",
+    "lines": [
+      304,
+      305
+    ]
+  }
+]

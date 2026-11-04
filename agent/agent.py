@@ -66,6 +66,7 @@ def triage(lines, verbose=False):
         {"role": "system", "content": SYSTEM},
         {"role": "user", "content": f"The log has {len(lines)} lines. Find all incidents."},
     ]
+    retries = 0
     for _ in range(MAX_STEPS):
         resp = client.chat.completions.create(
             model=model, messages=messages, tools=TOOL_SCHEMAS, temperature=0)
@@ -86,8 +87,18 @@ def triage(lines, verbose=False):
                 messages.append({"role": "tool", "tool_call_id": tc.id, "content": result})
             continue
         incidents = validate(extract_json(msg.content), valid)
-        if incidents:
+        covered = {n for inc in incidents for n in inc["evidence_lines"]}
+        missing = [c for c in tools.clusters()
+                   if not any(l.no in covered for l in c["lines"])]
+        if incidents and (not missing or retries >= 2):
             return incidents
-        messages.append({"role": "user",
-                         "content": "Return ONLY the JSON object in the required format."})
+        retries += 1
+        if incidents and missing:
+            txt = "\n".join(l.fmt() for c in missing for l in c["lines"])
+            prompt = ("These WARN/ERROR lines are not covered by any incident:\n" + txt +
+                      "\nAdd an incident for each such cluster and return the COMPLETE JSON "
+                      "(including the incidents you already found).")
+        else:
+            prompt = "Return ONLY the JSON object in the required format."
+        messages.append({"role": "user", "content": prompt})
     return []
