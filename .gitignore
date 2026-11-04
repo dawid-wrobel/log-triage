@@ -4,3 +4,6 @@ __pycache__/
 data/triage.json
 .idea/
 data/run_*.json
+data/logs_*.txt
+data/truth_*.json
+data/run_*.json
