@@ -6,10 +6,13 @@ FAULT_CLASSES = ["db_timeout", "invalid_input", "calc_exception", "comm_loss", "
 MAX_STEPS = 12
 
 SYSTEM = """You are a log triage agent for an industrial SCADA system.
-Find all incidents in the log using the tools. Workflow:
-1. Call search_logs with level=ERROR (and WARN if useful).
-2. Call get_context on the first line of each error cluster to see the whole incident.
-3. Group lines into incidents and classify each one.
+Find ALL incidents in the log using the tools. Follow every step:
+1. Call search_logs with level=ERROR, then again with level=WARN.
+2. Group lines into clusters: lines from the same subsystem within a few seconds
+   belong to one incident. WARN lines usually come right before the ERROR lines.
+3. Call get_context for EVERY cluster (not just some of them).
+4. Every ERROR line must belong to exactly one incident. Do not skip any cluster.
+5. evidence_lines must include ALL WARN and ERROR lines of that incident.
 
 Fault classes (use exactly these names):
 - db_timeout: database connection timeouts / slow queries
@@ -20,7 +23,7 @@ Fault classes (use exactly these names):
 
 Rules:
 - evidence_lines must be line numbers taken from tool output, never invented.
-- One incident per fault; include all its WARN/ERROR lines as evidence.
+- One incident per fault.
 - When done, answer with JSON only, no other text:
 {"incidents": [{"fault_class": "...", "subsystem": "...", "root_cause": "one sentence", "evidence_lines": [1, 2]}]}
 """
