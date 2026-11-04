@@ -51,9 +51,11 @@ def main():
             kind = pos[i]
             sub, steps = FAULTS[kind]
             start = len(out) + 1
+            params = dict(ms=random.randint(2000, 9000),
+                          v=random.choice(["-999", "1e9"]),
+                          p=random.randint(1, 3))
             for lvl, m in steps:
-                emit(lvl, sub, m.format(ms=random.randint(2000, 9000),
-                     v=random.choice(["-999", "1e9"]), p=random.randint(1, 3)))
+                emit(lvl, sub, m.format(**params))
             truth.append({"fault": kind, "subsystem": sub,
                           "lines": list(range(start, len(out) + 1))})
         else:
