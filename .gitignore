@@ -3,3 +3,4 @@ __pycache__/
 .pytest_cache/
 data/triage.json
 .idea/
+data/run_*.json

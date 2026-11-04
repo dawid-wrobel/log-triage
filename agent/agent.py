@@ -7,12 +7,9 @@ MAX_STEPS = 12
 
 SYSTEM = """You are a log triage agent for an industrial SCADA system.
 Find ALL incidents in the log using the tools. Follow every step:
-1. Call search_logs with level=ERROR, then again with level=WARN.
-2. Group lines into clusters: lines from the same subsystem within a few seconds
-   belong to one incident. WARN lines usually come right before the ERROR lines.
-3. Call get_context for EVERY cluster (not just some of them).
-4. Every ERROR line must belong to exactly one incident. Do not skip any cluster.
-5. evidence_lines must include ALL WARN and ERROR lines of that incident.
+1. Call find_incident_clusters first. It lists every WARN/ERROR line grouped into clusters.
+2. Every ERROR line must belong to exactly one incident. Do not skip any cluster.
+3. evidence_lines must include ALL WARN and ERROR lines of that incident.
 
 Fault classes (use exactly these names):
 - db_timeout: database connection timeouts / slow queries
@@ -79,7 +76,7 @@ def triage(lines, verbose=False):
                 name = tc.function.name
                 try:
                     args = json.loads(tc.function.arguments or "{}")
-                    if name not in ("search_logs", "get_context", "count_by_subsystem"):
+                    if name not in ("search_logs", "get_context", "count_by_subsystem", "find_incident_clusters"):
                         raise ValueError(f"unknown tool {name}")
                     result = getattr(tools, name)(**args)
                 except Exception as e:

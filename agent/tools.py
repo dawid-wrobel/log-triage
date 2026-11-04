@@ -1,4 +1,5 @@
 from collections import Counter
+from datetime import datetime
 
 class LogTools:
     def __init__(self, lines):
@@ -29,6 +30,26 @@ class LogTools:
         )
         return ", ".join(f"{k}: {v}" for k, v in c.most_common()) or "no results"
 
+    def find_incident_clusters(self, gap_seconds=10):
+        gap = int(gap_seconds)
+        fmt = "%Y-%m-%d %H:%M:%S"
+        clusters = []
+        for l in self.lines:
+            if l.level == "INFO":
+                continue
+            t = datetime.strptime(l.ts, fmt)
+            c = clusters[-1] if clusters else None
+            if c and c["sub"] == l.subsystem and (t - c["last"]).total_seconds() <= gap:
+                c["lines"].append(l)
+                c["last"] = t
+            else:
+                clusters.append({"sub": l.subsystem, "last": t, "lines": [l]})
+        out = []
+        for i, c in enumerate(clusters, 1):
+            out.append(f"Cluster {i} [{c['sub']}]:")
+            out.extend("  " + l.fmt() for l in c["lines"])
+        return "\n".join(out[:120]) or "no results"
+
 TOOL_SCHEMAS = [
     {"type": "function", "function": {
         "name": "search_logs",
@@ -51,4 +72,9 @@ TOOL_SCHEMAS = [
         "description": "Count log lines per subsystem, optionally for one level.",
         "parameters": {"type": "object", "properties": {
             "level": {"type": "string", "enum": ["INFO", "WARN", "ERROR"]}}}}},
+    {"type": "function", "function": {
+        "name": "find_incident_clusters",
+        "description": "Group all WARN and ERROR lines into incident clusters (same subsystem, close in time). Call this first.",
+        "parameters": {"type": "object", "properties": {
+            "gap_seconds": {"type": "integer"}}}}},
 ]
